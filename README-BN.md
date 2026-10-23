@@ -24,3 +24,10 @@ Supabase → Authentication → URL Configuration-এ Vercel deployment URL-ক�
 - বাস্তব customer data নেওয়ার আগে security review করতে হবে।
 - Existing SQL policies are an MVP starting point; production-এ order update permissions আরও সীমিত করতে হবে।
 - `.env` ফাইল GitHub-এ commit কোরো না।
+## নতুন ফিচার (Orders, Products, Photo, PWA)
+
+1. Supabase SQL Editor-এ `supabase/setup.sql` পুরোটা Run করো (products টেবিল, `product-images` storage, status নিয়ম)।
+2. GitHub-এ এই প্রজেক্টের সব ফাইল আপডেট করো; Vercel নিজে deploy করবে।
+3. Dashboard-এ **Orders** ট্যাবে order দেখা, status বদলানো, store/ status ফিল্টার; **Products** ট্যাবে ছবি সহ product যোগ করা যায়। ছবি Supabase Storage-এ স্থায়ী থাকে (Firebase লাগে না)।
+4. মোবাইলে সাইট খুলে browser menu → **Add to Home screen / Install app**।
+5. Website order form-এর জন্য `supabase/functions/place-order` ফাংশন deploy করো (Verify JWT OFF)।
