@@ -35,7 +35,7 @@ if (!url || !key) {
         <div id="productList" class="empty">Loading…</div></div>
       <p class="warning">Real customer data neyar age Supabase Security Advisor check korun ar order-er secret key kokhono frontend-e dibenna.</p>
     </section>
-    <footer>© <span id="year"></span> Web Blaze · Private by design</footer>
+    <footer>© <span id="year"></span> Web Blaze · Private by design<br>Created by Kawsar Ahmed Yaan</footer>
   </main>`
   document.querySelector('#year').textContent = new Date().getFullYear()
   let signup = false
